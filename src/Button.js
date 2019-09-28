@@ -12,7 +12,20 @@ const Button = styled.button`
   ${props => (props.type === "success" ? `background: #4caf50` : null)}
   ${props => (props.type === "danger" ? `background: #f44336` : null)}
   ${props => (props.type === "warning" ? `background: #fdd835` : null)}
-
 `;
 
-export default Button;
+
+const sayHello = () => {
+  console.log('hello');
+}
+const badWord = () => {
+  alert('sup biiiiiitch?!');
+}
+
+const danger = () => {
+  console.log('ISSO DANGEROUS!');
+}
+
+const exports = {Button, sayHello, badWord, danger};
+
+export default exports;
