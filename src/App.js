@@ -22,10 +22,6 @@ const MainDiv = styled.div`
 
 function App() {
   
-  const openInNewTab = (url) => {
-    var win=window.open(url, '_blank');
-    win.focus();
-  }
   
   return (
     <MainDiv className="main-div">
