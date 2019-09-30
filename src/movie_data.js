@@ -1,5 +1,3 @@
-import { url } from "inspector"
-
 var MovieData = 
 [
   {
