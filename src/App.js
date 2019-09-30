@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import { thing, thingLink } from './components/MovieCard';
+import MovieData from "./movie_data.js";
 
 const MovieImg = styled.img`
   width: 250px;
@@ -20,8 +21,17 @@ const MainDiv = styled.div`
   align-items: center;
 `;
 
+let dataNum = MovieData.length;
+const randomNum = () => {
+  return Math.floor(Math.random() * dataNum);
+}
+
+//MovieData[randomNum()] picks a random title from the data set.
+
 function App() {
-  
+  console.log(MovieData[randomNum()]);
+  console.log(randomNum());
+  console.log(MovieData[207]);
   
   return (
     <MainDiv className="main-div">
