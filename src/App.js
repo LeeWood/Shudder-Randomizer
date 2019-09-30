@@ -26,12 +26,12 @@ const randomNum = () => {
   return Math.floor(Math.random() * dataNum);
 }
 
+const randomMovie = MovieData[randomNum()]; 
 //MovieData[randomNum()] picks a random title from the data set.
 
 function App() {
-  console.log(MovieData[randomNum()]);
+  console.log(randomMovie.title);
   console.log(randomNum());
-  console.log(MovieData[207]);
   
   return (
     <MainDiv className="main-div">
