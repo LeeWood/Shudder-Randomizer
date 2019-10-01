@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import { thing, thingLink } from './components/MovieCard';
+import MovieCard from './components/MovieCard.js';
 import MovieData from "./movie_data.js";
 
 const MovieImg = styled.img`
@@ -34,10 +34,11 @@ function App() {
   console.log(randomNum());
   
   return (
-    <MainDiv className="main-div">
-    <MovieImg src = {thing} alt="movie cover"/>
-    <Button onClick={() => {window.location.href=thingLink}}>Watch Now!</Button>
-    </MainDiv>
+    <div className='app container'>
+
+      <MovieCard />
+
+    </div>
   );
 };
 //this is a way to incorporate a button link that doesn't fire immediately as the DOM renders.
