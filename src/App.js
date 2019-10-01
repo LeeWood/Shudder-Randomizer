@@ -1,7 +1,8 @@
 import React from 'react';
-import styled from "styled-components";
+import styled from 'styled-components';
 import MovieCard from './components/MovieCard.js';
-import MovieData from "./movie_data.js";
+import MovieData from './movie_data.js';
+import { Header, Footer } from './pageElements';
 
 const MovieImg = styled.img`
   width: 250px;
@@ -16,29 +17,36 @@ const Button = styled.button`
 `;
 
 const MainDiv = styled.div`
-  height: 70%;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+  height: 97vh;
+  width: 100%
+  
 `;
 
-let dataNum = MovieData.length;
-const randomNum = () => {
-  return Math.floor(Math.random() * dataNum);
-}
+//I COULD NOT get this to display at 100% height for some reason...what worked was using the vh (view height) unit.
 
-const randomMovie = MovieData[randomNum()]; 
+
+
 //MovieData[randomNum()] picks a random title from the data set.
 
 function App() {
-  console.log(randomMovie.title);
-  console.log(randomNum());
   
   return (
-    <div className='app container'>
+    <MainDiv className='app container'>
+
+      <Header>
+        Lookit
+      </Header>
 
       <MovieCard />
 
-    </div>
+      <Footer>
+        Aleesha Wood 2019
+      </Footer>
+    </MainDiv>
   );
 };
 //this is a way to incorporate a button link that doesn't fire immediately as the DOM renders.
