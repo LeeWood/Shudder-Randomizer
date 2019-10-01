@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import MovieCard from './components/MovieCard.js';
 import MovieData from './movie_data.js';
-import { Header, Footer } from './pageElements';
+import { Header, Footer, Logo } from './pageElements';
 
 const MovieImg = styled.img`
   width: 250px;
@@ -38,13 +38,17 @@ function App() {
     <MainDiv className='app container'>
 
       <Header>
-        Lookit
+        <Logo src='https://res.cloudinary.com/amc-svod/image/upload/f_auto,w_600/sh/shudder-logo-flat.png' alt="shudder logo"/>
+        <p>(Random Movie Generator)</p>
       </Header>
 
       <MovieCard />
 
       <Footer>
-        Aleesha Wood 2019
+        
+        <p>About</p> 
+        <p className="last-thing">Aleesha Wood 2019</p>      
+        
       </Footer>
     </MainDiv>
   );

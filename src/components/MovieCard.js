@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 //styles//
 const CardDiv = styled.div`
-  width: 70%;
+  width: 60%;
   height: 100%;
   align-items: flex-start;
   color: white;
@@ -13,7 +13,7 @@ const CardDiv = styled.div`
   margin-top: 5%;
 `;
 const MovieCover = styled.img`
-  height: 400px;
+  height: 350px;
   
 `;
 const TextInfo = styled.div`
@@ -23,7 +23,8 @@ const TextInfo = styled.div`
 
 const TitlePara = styled.p`
   margin-top: 0;
-  font-size: 1.5rem;
+  margin-bottom: 0;
+  font-size: 1.75rem;
 `;
 
 let dataNum = MovieData.length;
