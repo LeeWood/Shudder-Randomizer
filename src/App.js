@@ -53,7 +53,8 @@ function App() {
     </MainDiv>
   );
 };
-//this is a way to incorporate a button link that doesn't fire immediately as the DOM renders.
-//TODO find a way to get it to open in a new tab?
 
+//TODO find a way to get it to open in a new tab?
+//TODO add buttons and landing page using the stuff from this week's TK material!!
+//TODO replace dummy text with mdb api stuff
 export default App;
