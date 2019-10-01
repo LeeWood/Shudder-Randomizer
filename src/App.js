@@ -1,6 +1,8 @@
 import React from 'react';
-import styled from "styled-components";
-import { thing, thingLink } from './components/MovieCard';
+import styled from 'styled-components';
+import MovieCard from './components/MovieCard.js';
+import MovieData from './movie_data.js';
+import { Header, Footer, Logo } from './pageElements';
 
 const MovieImg = styled.img`
   width: 250px;
@@ -15,22 +17,44 @@ const Button = styled.button`
 `;
 
 const MainDiv = styled.div`
-  height: 70%;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+  height: 97vh;
+  width: 100%
+  
 `;
+
+//I COULD NOT get this to display at 100% height for some reason...what worked was using the vh (view height) unit.
+
+
+
+//MovieData[randomNum()] picks a random title from the data set.
 
 function App() {
   
-  
   return (
-    <MainDiv className="main-div">
-    <MovieImg src = {thing} alt="movie cover"/>
-    <Button onClick={() => {window.location.href=thingLink}}>Watch Now!</Button>
+    <MainDiv className='app container'>
+
+      <Header>
+        <Logo src='https://res.cloudinary.com/amc-svod/image/upload/f_auto,w_600/sh/shudder-logo-flat.png' alt="shudder logo"/>
+        <p>(Random Movie Generator)</p>
+      </Header>
+
+      <MovieCard />
+
+      <Footer>
+        
+        <p>About</p> 
+        <p className="last-thing">Aleesha Wood 2019</p>      
+        
+      </Footer>
     </MainDiv>
   );
 };
-//this is a way to incorporate a button link that doesn't fire immediately as the DOM renders.
-//TODO find a way to get it to open in a new tab?
 
+//TODO find a way to get it to open in a new tab?
+//TODO add buttons and landing page using the stuff from this week's TK material!!
+//TODO replace dummy text with mdb api stuff
 export default App;
