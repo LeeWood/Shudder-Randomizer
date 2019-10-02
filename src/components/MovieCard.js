@@ -14,9 +14,8 @@ const CardDiv = styled.div`
   margin-top: 5%;
 `;
 const MovieCover = styled.img`
-  height: 350px;
+  height: 310px;
   border-radius: 8px;
-  
 `;
 const TextInfo = styled.div`
   width: 330px;
@@ -25,7 +24,7 @@ const TextInfo = styled.div`
 const TitlePara = styled.p`
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 `;
 const ButtonContainer = styled.div`
   display: flex;
@@ -39,10 +38,12 @@ const ButtonContainer = styled.div`
     color: ${elemntVars.mainRed};
     font-family: ${elemntVars.featureFont};
     font-size: 30px;
-  }
-    button:focus {
+    &:focus {
       outline: transparent;
       box-shadow: 1px 1px;
+    };
+    &:hover {
+      cursor: pointer; 
     }
 `;
 
@@ -61,7 +62,7 @@ const MovieCard = () => {
   
   return (
     <CardDiv>
-      <MovieCover src={randomMovie.cover} />
+      <MovieCover src={randomMovie.cover} alt={randomMovie.title + " Cover Art"} />
 
       <TextInfo>
         <TitlePara className="title">
@@ -73,8 +74,16 @@ const MovieCard = () => {
         </p>
 
         <ButtonContainer>
-          <button type="submit" onClick={ () => {visitPage()}}>watch</button>
-          <button>pick again</button>
+          <button 
+            type="submit" 
+            onClick={() => {visitPage()}}>
+              watch
+          </button>
+          <button
+            type="submit"
+            onClick={() => {window.location.reload()}}
+            >
+              pick again</button>
 
         </ButtonContainer>
       </TextInfo>
