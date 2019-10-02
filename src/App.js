@@ -52,7 +52,7 @@ function App() {
   );
 };
 
-//TODO find a way to get it to open in a new tab?
-//TODO add buttons and landing page using the stuff from this week's TK material!!
+//TODO edit buttons and add landing page using the stuff from this week's TK material!!
 //TODO replace dummy text with mdb api stuff
+//??make cover art bigger again??
 export default App;
