@@ -30,8 +30,6 @@ const MainDiv = styled.div`
 
 
 
-//MovieData[randomNum()] picks a random title from the data set.
-
 function App() {
   
   return (

@@ -1594,8 +1594,14 @@ var MovieData =
     title: "Castle Freak",
     cover: "https://res.cloudinary.com/amc-svod/image/upload/f_auto,w_600,q_auto:best/vmh/0e08e9332a0aa006_boxart.jpg",
     url:"https://www.shudder.com/movies/watch/castle-freak/2325065"
-  }   
+  },
+  {
+    title: "Body Bags",
+    cover: "https://res.cloudinary.com/amc-svod/image/upload/f_auto,w_600,q_auto:best/vmh/568faca3c8adf4b6_boxart.jpg",
+    url: "https://www.shudder.com/movies/watch/body-bags/5224108"
+  }
 ]
+
 
 export default MovieData;
 

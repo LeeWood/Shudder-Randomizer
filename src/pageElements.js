@@ -41,3 +41,4 @@ export const Footer = styled.footer`
 `;
 
 
+export const elemntVars = {mainRed, featureFont, infoFont};
