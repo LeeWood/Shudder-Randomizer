@@ -1,20 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import MovieCard from './components/MovieCard.js';
-import MovieData from './movie_data.js';
 import { Header, Footer, Logo } from './pageElements';
 
-const MovieImg = styled.img`
-  width: 250px;
-  margin-left: 500px;
-  margin-top: 100px;
-`;
-
-const Button = styled.button`
-  margin-left: 10px;
-  height: 40px;
-  justify-self: flex-end;
-`;
 
 const MainDiv = styled.div`
   display: flex;

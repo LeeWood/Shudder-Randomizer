@@ -11,10 +11,10 @@ const CardDiv = styled.div`
   color: white;
   display: flex;
   justify-content: space-evenly;
-  margin-top: 5%;
+  margin-top: 4%;
 `;
 const MovieCover = styled.img`
-  height: 310px;
+  height: 350px;
   border-radius: 8px;
 `;
 const TextInfo = styled.div`
