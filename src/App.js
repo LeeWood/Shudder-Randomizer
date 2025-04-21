@@ -45,7 +45,7 @@ function App() {
       <Footer>
         
         <p>About</p> 
-        <p className="last-thing">Aleesha Wood 2019</p>      
+        <p className="last-thing">Lee Wood 2019</p>      
         
       </Footer>
     </MainDiv>
